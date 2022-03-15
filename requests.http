@@ -1,0 +1,32 @@
+### Cars Index
+GET http://localhost:3000/cars
+
+### Cars Create
+POST http://localhost:3000/cars
+Content-Type: application/json
+
+{
+  "year": "Car year",
+  "make": "Car make",
+  "model": "Car model",
+  "color": "Car color",
+  "price": "Car price"
+}
+
+### Cars Show
+GET http://localhost:3000/cars/1
+
+### Cars Update
+PATCH http://localhost:3000/cars/1
+Content-Type: application/json
+
+{
+  "year": "New year",
+  "make": "New make",
+  "model": "New model",
+  "color": "New color",
+  "price": "New price"
+}
+
+### Car Destroy
+DELETE http://localhost:3000/cars/5
